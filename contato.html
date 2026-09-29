@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Entre em contato com a AGV Solution para assuntos comerciais, Threeo Fleet, suporte, parcerias, privacidade e proteção de dados."
+    >
+
+    <meta
+        name="keywords"
+        content="AGV Solution, contato, Threeo Fleet, Fleet OS, gestão de frotas, LGPD, privacidade, suporte"
+    >
+
+    <meta
+        name="author"
+        content="AGV Solution LTDA"
+    >
+
+    <meta
+        name="theme-color"
+        content="#f47721"
+    >
+
+    <title>
+        Contato | AGV Solution
+    </title>
+
+
+    <!-- =====================================================
+         FAVICONS
+    ====================================================== -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="./assets/icons/favicon-32x32.png"
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="./assets/icons/favicon-16x16.png"
+    >
+
+    <link
+        rel="shortcut icon"
+        href="./assets/icons/favicon.ico"
+    >
+
+    <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="./assets/icons/apple-touch-icon.png"
+    >
+
+    <link
+        rel="manifest"
+        href="./assets/icons/site.webmanifest"
+    >
+
+
+    <!-- =====================================================
+         FONTES
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         CSS PRINCIPAL
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="./css/style.css"
+    >
+
+
+    <!-- =====================================================
+         CSS DA PÁGINA
+    ====================================================== -->
+
+    <style>
+
+        /* ============================================================
+           HERO
+        ============================================================ */
+
+        .contact-hero {
+            position: relative;
+            overflow: hidden;
+
+            padding: 160px 0 90px;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #ffffff 0%,
+                    #f8f9fb 100%
+                );
+
+            border-bottom: 1px solid #eceef0;
+        }
+
+        .contact-hero::before {
+            content: "";
+
+            position: absolute;
+            inset: 0;
+
+            background-image:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.025) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(0, 0, 0, 0.025) 1px,
+                    transparent 1px
+                );
+
+            background-size: 48px 48px;
+
+            mask-image:
+                linear-gradient(
+                    to bottom,
+                    #000000,
+                    transparent 88%
+                );
+
+            pointer-events: none;
+        }
+
+        .contact-hero-glow {
+            width: 450px;
+            height: 450px;
+
+            position: absolute;
+
+            top: -180px;
+            right: -90px;
+
+            border-radius: 50%;
+
+            background: rgba(244, 119, 33, 0.14);
+
+            filter: blur(70px);
+
+            pointer-events: none;
+        }
+
+        .contact-hero-content {
+            position: relative;
+            z-index: 2;
+
+            max-width: 860px;
+        }
+
+        .contact-badge {
+            width: fit-content;
+
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+
+            margin-bottom: 24px;
+            padding: 7px 12px;
+
+            color: #5f6670;
+            background: rgba(255, 255, 255, 0.88);
+
+            border: 1px solid #e5e7ea;
+            border-radius: 100px;
+
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .contact-badge::before {
+            content: "";
+
+            width: 7px;
+            height: 7px;
+
+            background: var(--orange);
+
+            border-radius: 50%;
+
+            box-shadow:
+                0 0 0 4px rgba(244, 119, 33, 0.12);
+        }
+
+        .contact-hero h1 {
+            max-width: 820px;
+
+            color: var(--black);
+
+            font-size: clamp(52px, 7vw, 84px);
+            line-height: 0.97;
+            letter-spacing: -0.06em;
+        }
+
+        .contact-hero h1 span {
+            color: var(--orange);
+        }
+
+        .contact-hero p {
+            max-width: 700px;
+
+            margin-top: 28px;
+
+            color: #686e77;
+
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+
+        /* ============================================================
+           CONTATO PRINCIPAL
+        ============================================================ */
+
+        .contact-main {
+            background: #ffffff;
+        }
+
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 0.85fr 1.15fr;
+            gap: 70px;
+
+            align-items: start;
+        }
+
+        .contact-intro {
+            position: sticky;
+            top: 120px;
+
+            align-self: start;
+        }
+
+        .contact-intro h2 {
+            color: var(--black);
+
+            font-size: clamp(38px, 5vw, 60px);
+            line-height: 1.05;
+            letter-spacing: -0.05em;
+        }
+
+        .contact-intro h2 span {
+            color: var(--orange);
+        }
+
+        .contact-intro p {
+            margin-top: 22px;
+
+            color: #70767e;
+
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .contact-direct {
+            margin-top: 32px;
+
+            padding-top: 28px;
+
+            border-top: 1px solid #e5e7ea;
+        }
+
+        .contact-direct span {
+            display: block;
+
+            margin-bottom: 8px;
+
+            color: #9ba0a7;
+
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+        }
+
+        .contact-direct a {
+            color: #20242a;
+
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .contact-direct a:hover {
+            color: var(--orange);
+        }
+
+
+        /* ============================================================
+           FORM
+        ============================================================ */
+
+        .contact-form-card {
+            padding: 34px;
+
+            background: #f8f9fa;
+
+            border: 1px solid #e5e7ea;
+            border-radius: 24px;
+        }
+
+        .contact-form-header {
+            margin-bottom: 28px;
+        }
+
+        .contact-form-header span {
+            display: block;
+
+            margin-bottom: 8px;
+
+            color: var(--orange);
+
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+        }
+
+        .contact-form-header h3 {
+            color: #1e2227;
+
+            font-size: 25px;
+            letter-spacing: -0.03em;
+        }
+
+        .contact-form-header p {
+            margin-top: 10px;
+
+            color: #7b8088;
+
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 18px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        .form-field {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-field label {
+            color: #454a52;
+
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        .form-field input,
+        .form-field select,
+        .form-field textarea {
+            width: 100%;
+
+            padding: 14px 15px;
+
+            color: #1f2328;
+            background: #ffffff;
+
+            border: 1px solid #dfe2e5;
+            border-radius: 12px;
+
+            outline: none;
+
+            font-size: 14px;
+
+            transition:
+                border-color 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .form-field textarea {
+            min-height: 150px;
+
+            resize: vertical;
+        }
+
+        .form-field input:focus,
+        .form-field select:focus,
+        .form-field textarea:focus {
+            border-color: var(--orange);
+
+            box-shadow:
+                0 0 0 4px rgba(244, 119, 33, 0.10);
+        }
+
+        .form-consent {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+
+            margin-top: 2px;
+        }
+
+        .form-consent input {
+            margin-top: 4px;
+        }
+
+        .form-consent label {
+            color: #777c84;
+
+            font-size: 11px;
+            line-height: 1.6;
+        }
+
+        .form-consent a {
+            color: var(--orange);
+            font-weight: 700;
+        }
+
+        .contact-form .btn {
+            width: fit-content;
+
+            margin-top: 4px;
+        }
+
+
+        /* ============================================================
+           CANAIS
+        ============================================================ */
+
+        .contact-channels {
+            background: #f7f8fa;
+        }
+
+        .contact-channels-heading {
+            max-width: 760px;
+
+            margin-bottom: 55px;
+        }
+
+        .contact-channels-heading h2 {
+            color: var(--black);
+
+            font-size: clamp(38px, 5vw, 60px);
+            line-height: 1.05;
+            letter-spacing: -0.05em;
+        }
+
+        .contact-channels-heading h2 span {
+            color: var(--orange);
+        }
+
+        .contact-channels-heading p {
+            margin-top: 20px;
+
+            color: #747a82;
+
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .contact-channels-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .contact-channel-card {
+            min-height: 250px;
+
+            display: flex;
+            flex-direction: column;
+
+            padding: 28px;
+
+            background: #ffffff;
+
+            border: 1px solid #e5e7ea;
+            border-radius: 20px;
+
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+        .contact-channel-card:hover {
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 18px 45px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-channel-card-dark {
+            color: #ffffff;
+            background: var(--dark);
+
+            border-color: var(--dark);
+        }
+
+        .channel-index {
+            color: #b3b7bd;
+
+            font-size: 10px;
+            font-weight: 800;
+        }
+
+        .contact-channel-card-dark .channel-index {
+            color: #686e76;
+        }
+
+        .channel-content {
+            margin-top: auto;
+        }
+
+        .channel-content h3 {
+            margin-bottom: 10px;
+
+            font-size: 18px;
+        }
+
+        .channel-content p {
+            color: #7a7f87;
+
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .contact-channel-card-dark .channel-content p {
+            color: #969ba3;
+        }
+
+        .channel-content a {
+            display: inline-block;
+
+            margin-top: 18px;
+
+            color: var(--orange);
+
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        .contact-channel-card-dark .channel-content a {
+            color: #ffffff;
+        }
+
+
+        /* ============================================================
+           PRIVACIDADE
+        ============================================================ */
+
+        .privacy-contact {
+            color: #ffffff;
+            background: #111318;
+        }
+
+        .privacy-contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 0.9fr;
+            gap: 70px;
+
+            align-items: center;
+        }
+
+        .privacy-contact-content h2 {
+            max-width: 700px;
+
+            font-size: clamp(40px, 5vw, 64px);
+            line-height: 1.04;
+            letter-spacing: -0.05em;
+        }
+
+        .privacy-contact-content h2 span {
+            color: var(--orange);
+        }
+
+        .privacy-contact-content p {
+            max-width: 650px;
+
+            margin-top: 22px;
+
+            color: #999ea5;
+
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .privacy-contact-card {
+            padding: 30px;
+
+            background: rgba(255, 255, 255, 0.035);
+
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+        }
+
+        .privacy-contact-card span {
+            display: block;
+
+            margin-bottom: 9px;
+
+            color: var(--orange);
+
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+        }
+
+        .privacy-contact-card h3 {
+            color: #ffffff;
+
+            font-size: 21px;
+        }
+
+        .privacy-contact-card p {
+            margin-top: 10px;
+
+            color: #92979f;
+
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .privacy-contact-card a {
+            display: inline-block;
+
+            margin-top: 18px;
+
+            color: #ffffff;
+
+            font-size: 14px;
+            font-weight: 800;
+        }
+
+        .privacy-contact-card a:hover {
+            color: var(--orange);
+        }
+
+
+        /* ============================================================
+           LOCATION
+        ============================================================ */
+
+        .contact-location {
+            background: #ffffff;
+        }
+
+        .contact-location-box {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 40px;
+
+            align-items: center;
+
+            padding: 48px;
+
+            background: #f8f9fa;
+
+            border: 1px solid #e5e7ea;
+            border-radius: 24px;
+        }
+
+        .contact-location span {
+            display: block;
+
+            margin-bottom: 10px;
+
+            color: var(--orange);
+
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .contact-location h2 {
+            color: var(--black);
+
+            font-size: clamp(32px, 4vw, 48px);
+            line-height: 1.08;
+            letter-spacing: -0.04em;
+        }
+
+        .contact-location p {
+            margin-top: 14px;
+
+            color: #767b83;
+
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .location-mark {
+            width: 82px;
+            height: 82px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            flex-shrink: 0;
+
+            background: transparent;
+            border-radius: 0;
+        }
+
+        .location-mark-image {
+            width: 100%;
+            height: 100%;
+
+            display: block;
+
+            object-fit: contain;
+        }
+
+
+        /* ============================================================
+           RESPONSIVO
+        ============================================================ */
+
+        @media (max-width: 980px) {
+
+            .contact-layout,
+            .privacy-contact-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-intro {
+                position: static;
+            }
+
+            .contact-channels-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 700px) {
+
+            .contact-hero {
+                padding: 130px 0 70px;
+            }
+
+            .contact-hero h1 {
+                font-size: 50px;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form-card {
+                padding: 25px;
+            }
+
+            .contact-channels-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-location-box {
+                grid-template-columns: 1fr;
+
+                padding: 30px;
+            }
+
+            .location-mark {
+                width: 68px;
+                height: 68px;
+            }
+
+            .contact-form .btn {
+                width: 100%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================================
+         HEADER
+    ========================================================== -->
+
+    <header
+        class="header scrolled"
+        id="header"
+    >
+
+        <div class="container header-container">
+
+            <a
+                href="./index.html"
+                class="brand"
+                aria-label="AGV Solution"
+            >
+
+                <img
+                    src="./assets/icons/android-chrome-192x192.png"
+                    alt=""
+                    class="brand-symbol-image"
+                >
+
+                <div class="brand-text">
+                    <strong>AGV</strong>
+                    <span>Solution</span>
+                </div>
+
+            </a>
+
+
+            <nav
+                class="desktop-nav"
+                aria-label="Navegação principal"
+            >
+
+                <a href="./index.html#sobre">
+                    Sobre
+                </a>
+
+                <a href="./index.html#proposito">
+                    Propósito
+                </a>
+
+                <a href="./solucoes.html">
+                    Threeo Fleet
+                </a>
+
+                <a href="./index.html#historia">
+                    Nossa história
+                </a>
+
+                <a href="./contato.html">
+                    Contato
+                </a>
+
+            </nav>
+
+
+            <div class="header-actions">
+
+                <a
+                    href="./solucoes.html"
+                    class="btn btn-header"
+                >
+                    Conheça nossas soluções
+                </a>
+
+                <button
+                    class="menu-button"
+                    id="menuButton"
+                    type="button"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="mobile-menu"
+            id="mobileMenu"
+            aria-hidden="true"
+        >
+
+            <a href="./index.html#sobre">
+                Sobre
+            </a>
+
+            <a href="./index.html#proposito">
+                Propósito
+            </a>
+
+            <a href="./solucoes.html">
+                Threeo Fleet
+            </a>
+
+            <a href="./index.html#historia">
+                Nossa história
+            </a>
+
+            <a href="./contato.html">
+                Contato
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+
+        <section class="contact-hero">
+
+            <div class="contact-hero-glow"></div>
+
+            <div class="container">
+
+                <div class="contact-hero-content reveal">
+
+                    <div class="contact-badge">
+                        Fale com a AGV Solution
+                    </div>
+
+                    <h1>
+                        Vamos conversar sobre
+                        <span>sua operação.</span>
+                    </h1>
+
+                    <p>
+
+                        Entre em contato para conhecer nossas soluções,
+                        falar sobre o Threeo Fleet, discutir integrações,
+                        parcerias, suporte ou assuntos relacionados a
+                        privacidade e proteção de dados.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             FORMULÁRIO
+        ====================================================== -->
+
+        <section class="contact-main section">
+
+            <div class="container contact-layout">
+
+
+                <div class="contact-intro reveal">
+
+                    <span class="section-label">
+                        Contato
+                    </span>
+
+                    <h2>
+                        O primeiro passo é
+                        <span>entender o cenário.</span>
+                    </h2>
+
+                    <p>
+
+                        Cada operação possui características próprias.
+                        Conte brevemente o que você precisa e direcionaremos
+                        o contato para o assunto adequado.
+
+                    </p>
+
+
+                    <div class="contact-direct">
+
+                        <span>
+                            E-mail
+                        </span>
+
+                        <a href="mailto:contato@agvsolution.com.br">
+                            contato@agvsolution.com.br
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="contact-form-card reveal">
+
+                    <div class="contact-form-header">
+
+                        <span>
+                            Envie uma mensagem
+                        </span>
+
+                        <h3>
+                            Fale com a nossa equipe
+                        </h3>
+
+                        <p>
+
+                            Preencha os dados abaixo para iniciar o contato.
+
+                        </p>
+
+                    </div>
+
+
+                    <form
+                        class="contact-form"
+                        action="mailto:contato@agvsolution.com.br"
+                        method="post"
+                        enctype="text/plain"
+                    >
+
+                        <div class="form-grid">
+
+                            <div class="form-field">
+
+                                <label for="nome">
+                                    Nome
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="nome"
+                                    name="Nome"
+                                    placeholder="Seu nome"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-field">
+
+                                <label for="empresa">
+                                    Empresa
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="empresa"
+                                    name="Empresa"
+                                    placeholder="Nome da empresa"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+                            <div class="form-field">
+
+                                <label for="email">
+                                    E-mail
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="Email"
+                                    placeholder="seuemail@empresa.com.br"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-field">
+
+                                <label for="telefone">
+                                    Telefone
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="telefone"
+                                    name="Telefone"
+                                    placeholder="(00) 00000-0000"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="assunto">
+                                Assunto
+                            </label>
+
+                            <select
+                                id="assunto"
+                                name="Assunto"
+                                required
+                            >
+
+                                <option value="">
+                                    Selecione uma opção
+                                </option>
+
+                                <option value="Threeo Fleet">
+                                    Threeo Fleet
+                                </option>
+
+                                <option value="Comercial">
+                                    Comercial
+                                </option>
+
+                                <option value="Demonstracao">
+                                    Demonstração da plataforma
+                                </option>
+
+                                <option value="Integracoes">
+                                    Integrações
+                                </option>
+
+                                <option value="Parcerias">
+                                    Parcerias
+                                </option>
+
+                                <option value="Suporte">
+                                    Suporte
+                                </option>
+
+                                <option value="Privacidade LGPD">
+                                    Privacidade / LGPD
+                                </option>
+
+                                <option value="Outro">
+                                    Outro assunto
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="mensagem">
+                                Mensagem
+                            </label>
+
+                            <textarea
+                                id="mensagem"
+                                name="Mensagem"
+                                placeholder="Conte brevemente como podemos ajudar."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <div class="form-consent">
+
+                            <input
+                                type="checkbox"
+                                id="consentimento"
+                                required
+                            >
+
+                            <label for="consentimento">
+
+                                Estou ciente de que os dados informados neste
+                                formulário serão utilizados para responder
+                                à minha solicitação, conforme a
+                                <a href="./privacidade.html">
+                                    Política de Privacidade
+                                </a>
+                                da AGV Solution.
+
+                            </label>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary"
+                        >
+                            Enviar mensagem
+                            <span aria-hidden="true">
+                                →
+                            </span>
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CANAIS
+        ====================================================== -->
+
+        <section class="contact-channels section">
+
+            <div class="container">
+
+
+                <div class="contact-channels-heading reveal">
+
+                    <span class="section-label">
+                        Canais
+                    </span>
+
+                    <h2>
+                        Direcione sua mensagem
+                        <span>para o assunto certo.</span>
+                    </h2>
+
+                    <p>
+
+                        Utilize nossos canais institucionais conforme
+                        o tipo de solicitação.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="contact-channels-grid">
+
+
+                    <article class="contact-channel-card reveal">
+
+                        <span class="channel-index">
+                            01
+                        </span>
+
+                        <div class="channel-content">
+
+                            <h3>
+                                Comercial
+                            </h3>
+
+                            <p>
+
+                                Para conhecer o Threeo Fleet, falar sobre
+                                demonstrações, propostas, módulos e soluções
+                                para gestão de frotas.
+
+                            </p>
+
+                            <a
+                                href="mailto:contato@agvsolution.com.br?subject=Comercial%20-%20AGV%20Solution"
+                            >
+                                Entrar em contato →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="contact-channel-card reveal">
+
+                        <span class="channel-index">
+                            02
+                        </span>
+
+                        <div class="channel-content">
+
+                            <h3>
+                                Suporte e operação
+                            </h3>
+
+                            <p>
+
+                                Para assuntos relacionados à utilização
+                                das soluções, operação, integrações ou
+                                atendimento técnico.
+
+                            </p>
+
+                            <a
+                                href="mailto:contato@agvsolution.com.br?subject=Suporte%20-%20AGV%20Solution"
+                            >
+                                Falar com a AGV →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="contact-channel-card contact-channel-card-dark reveal">
+
+                        <span class="channel-index">
+                            03
+                        </span>
+
+                        <div class="channel-content">
+
+                            <h3>
+                                Privacidade e LGPD
+                            </h3>
+
+                            <p>
+
+                                Para exercício de direitos, solicitações
+                                relacionadas a dados pessoais ou outros
+                                assuntos de privacidade.
+
+                            </p>
+
+                            <a
+                                href="mailto:contato@agvsolution.com.br?subject=Privacidade%20%2F%20LGPD"
+                            >
+                                Acessar canal →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             PRIVACIDADE
+        ====================================================== -->
+
+        <section class="privacy-contact section">
+
+            <div class="container privacy-contact-layout">
+
+
+                <div class="privacy-contact-content reveal">
+
+                    <span class="section-label">
+                        Proteção de dados
+                    </span>
+
+                    <h2>
+                        Seus dados também merecem
+                        <span>clareza.</span>
+                    </h2>
+
+                    <p>
+
+                        A AGV Solution disponibiliza um canal para
+                        solicitações relacionadas à privacidade, proteção
+                        de dados pessoais e exercício de direitos previstos
+                        na legislação aplicável.
+
+                    </p>
+
+                </div>
+
+
+                <div class="privacy-contact-card reveal">
+
+                    <span>
+                        Canal do titular
+                    </span>
+
+                    <h3>
+                        Privacidade / LGPD
+                    </h3>
+
+                    <p>
+
+                        Envie sua solicitação utilizando o assunto
+                        “Privacidade / LGPD”.
+
+                    </p>
+
+                    <a
+                        href="mailto:contato@agvsolution.com.br?subject=Privacidade%20%2F%20LGPD"
+                    >
+                        contato@agvsolution.com.br
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             LOCALIZAÇÃO
+        ====================================================== -->
+
+        <section class="contact-location section">
+
+            <div class="container">
+
+                <div class="contact-location-box reveal">
+
+                    <div>
+
+                        <span>
+                            AGV Solution
+                        </span>
+
+                        <h2>
+                            Caxias do Sul · Rio Grande do Sul
+                        </h2>
+
+                        <p>
+
+                            Empresa brasileira de tecnologia aplicada
+                            à gestão de frotas e automação de processos.
+
+                        </p>
+
+                    </div>
+
+
+                    <div
+                        class="location-mark"
+                        aria-hidden="true"
+                    >
+                        <img
+                            src="./assets/icons/android-chrome-192x192.png"
+                            alt=""
+                            class="location-mark-image"
+                        >
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+
+            <div class="footer-top">
+
+
+                <div class="footer-brand">
+
+                    <a
+                        href="./index.html"
+                        class="brand footer-logo"
+                        aria-label="AGV Solution"
+                    >
+
+                        <img
+                            src="./assets/icons/android-chrome-192x192.png"
+                            alt=""
+                            class="brand-symbol-image"
+                        >
+
+                        <div class="brand-text">
+                            <strong>AGV</strong>
+                            <span>Solution</span>
+                        </div>
+
+                    </a>
+
+
+                    <p>
+                        Tecnologia para uma gestão de frotas mais integrada,
+                        transparente e inteligente.
+                    </p>
+
+                </div>
+
+
+
+                <div class="footer-navigation">
+
+
+                    <div class="footer-column">
+
+                        <strong>
+                            AGV Solution
+                        </strong>
+
+                        <a href="./sobre.html">
+                            Sobre
+                        </a>
+
+                        <a href="./index.html#proposito">
+                            Propósito
+                        </a>
+
+                        <a href="./index.html#historia">
+                            Nossa história
+                        </a>
+
+                    </div>
+
+
+                    <div class="footer-column">
+
+                        <strong>
+                            Soluções
+                        </strong>
+
+                        <a href="./solucoes.html">
+                            Threeo Fleet
+                        </a>
+
+                        <a href="./solucoes.html#modulos">
+                            Funcionalidades
+                        </a>
+
+                        <a href="./solucoes.html">
+                            Fleet OS
+                        </a>
+
+                    </div>
+
+
+                    <div class="footer-column">
+
+                        <strong>
+                            Legal e contato
+                        </strong>
+
+                        <a href="./privacidade.html">
+                            Política de Privacidade
+                        </a>
+
+                        <a href="./termos.html">
+                            Termos de Uso
+                        </a>
+
+                        <a href="./contato.html">
+                            Fale conosco
+                        </a>
+
+                        <a href="mailto:contato@agvsolution.com.br">
+                            contato@agvsolution.com.br
+                        </a>
+
+                        <span>
+                            Caxias do Sul · RS
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="currentYear"></span>
+                    AGV Solution LTDA. Todos os direitos reservados.
+                </p>
+
+                <div class="footer-legal">
+
+                    <a href="./privacidade.html">
+                        Política de Privacidade
+                    </a>
+
+                    <a href="./termos.html">
+                        Termos de Uso
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+
+    <script src="./js/main.js"></script>
+
+
+</body>
+
+</html>

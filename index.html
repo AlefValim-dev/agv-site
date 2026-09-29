@@ -1,0 +1,2501 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+
+        name="viewport"
+
+        content="width=device-width, initial-scale=1.0"
+
+    >
+
+    <meta
+
+        name="description"
+
+        content="AGV Solution — tecnologia para uma gestão de frotas mais integrada, automatizada, transparente e orientada por dados."
+
+    >
+
+    <meta
+
+        name="keywords"
+
+        content="AGV Solution, Threeo Fleet, gestão de frotas, fleet management, Fleet OS, tecnologia, automação, BI, multas, veículos, condutores"
+
+    >
+
+    <meta
+
+        name="author"
+
+        content="AGV Solution LTDA"
+
+    >
+
+    <meta
+
+        name="theme-color"
+
+        content="#f47721"
+
+    >
+
+    <title>
+
+        AGV Solution | Tecnologia para gestão de frotas
+
+    </title>
+
+    <!-- =====================================================
+
+         FAVICONS / APP ICONS
+
+    ====================================================== -->
+
+    <link
+
+        rel="icon"
+
+        type="image/png"
+
+        sizes="32x32"
+
+        href="./assets/icons/favicon-32x32.png"
+
+    >
+
+    <link
+
+        rel="icon"
+
+        type="image/png"
+
+        sizes="16x16"
+
+        href="./assets/icons/favicon-16x16.png"
+
+    >
+
+    <link
+
+        rel="shortcut icon"
+
+        href="./assets/icons/favicon.ico"
+
+    >
+
+    <link
+
+        rel="apple-touch-icon"
+
+        sizes="180x180"
+
+        href="./assets/icons/apple-touch-icon.png"
+
+    >
+
+    <link
+
+        rel="manifest"
+
+        href="./assets/icons/site.webmanifest"
+
+    >
+
+    <!-- =====================================================
+
+         FONTES
+
+    ====================================================== -->
+
+    <link
+
+        rel="preconnect"
+
+        href="https://fonts.googleapis.com"
+
+    >
+
+    <link
+
+        rel="preconnect"
+
+        href="https://fonts.gstatic.com"
+
+        crossorigin
+
+    >
+
+    <link
+
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+
+        rel="stylesheet"
+
+    >
+
+    <!-- =====================================================
+
+         CSS
+
+    ====================================================== -->
+
+    <link
+
+        rel="stylesheet"
+
+        href="./css/style.css"
+
+    >
+
+    <style>
+
+        /* ============================================================
+
+           PRIVACIDADE E CONFORMIDADE
+
+        ============================================================ */
+
+        .legal-overview {
+
+            background: #f7f8fa;
+
+        }
+
+        .legal-overview-box {
+
+            display: grid;
+
+            grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr);
+
+            gap: 28px;
+
+            align-items: stretch;
+
+        }
+
+        .legal-overview-content,
+
+        .legal-overview-aside {
+
+            border: 1px solid #e5e7ea;
+
+            border-radius: 24px;
+
+        }
+
+        .legal-overview-content {
+
+            padding: 48px;
+
+            background: #ffffff;
+
+        }
+
+        .legal-overview-content h2 {
+
+            max-width: 720px;
+
+            color: var(--black);
+
+            font-size: clamp(36px, 5vw, 56px);
+
+            line-height: 1.05;
+
+            letter-spacing: -0.05em;
+
+        }
+
+        .legal-overview-content h2 span {
+
+            color: var(--orange);
+
+        }
+
+        .legal-overview-content > p {
+
+            max-width: 700px;
+
+            margin-top: 22px;
+
+            color: #6b7179;
+
+            font-size: 15px;
+
+            line-height: 1.8;
+
+        }
+
+        .legal-overview-links {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 14px;
+
+            margin-top: 34px;
+
+        }
+
+        .legal-overview-link {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 18px;
+
+            padding: 22px;
+
+            background: #fafbfc;
+
+            border: 1px solid #e6e8eb;
+
+            border-radius: 16px;
+
+            transition:
+
+                transform .25s ease,
+
+                border-color .25s ease,
+
+                box-shadow .25s ease;
+
+        }
+
+        .legal-overview-link:hover {
+
+            transform: translateY(-3px);
+
+            border-color: #d5d8dc;
+
+            box-shadow: 0 16px 40px rgba(0, 0, 0, .05);
+
+        }
+
+        .legal-overview-link > div {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 5px;
+
+        }
+
+        .legal-overview-link strong {
+
+            color: #1b1f24;
+
+            font-size: 14px;
+
+        }
+
+        .legal-overview-link div span {
+
+            color: #848991;
+
+            font-size: 11px;
+
+            line-height: 1.6;
+
+        }
+
+        .legal-overview-link > span {
+
+            color: var(--orange);
+
+            font-size: 20px;
+
+            font-weight: 700;
+
+        }
+
+        .legal-overview-aside {
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            padding: 38px;
+
+            color: #ffffff;
+
+            background: var(--dark);
+
+        }
+
+        .legal-overview-kicker {
+
+            margin-bottom: 18px;
+
+            color: var(--orange);
+
+            font-size: 10px;
+
+            font-weight: 800;
+
+            letter-spacing: .1em;
+
+            text-transform: uppercase;
+
+        }
+
+        .legal-overview-aside h3 {
+
+            color: #ffffff;
+
+            font-size: 25px;
+
+            line-height: 1.25;
+
+            letter-spacing: -.03em;
+
+        }
+
+        .legal-overview-aside p {
+
+            margin-top: 14px;
+
+            color: #9da2a9;
+
+            font-size: 13px;
+
+            line-height: 1.7;
+
+        }
+
+        .legal-overview-aside .btn {
+
+            width: fit-content;
+
+            margin-top: 26px;
+
+        }
+
+        @media (max-width: 900px) {
+
+            .legal-overview-box {
+
+                grid-template-columns: 1fr;
+
+            }
+
+        }
+
+        @media (max-width: 620px) {
+
+            .legal-overview-content,
+
+            .legal-overview-aside {
+
+                padding: 28px;
+
+            }
+
+            .legal-overview-links {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .legal-overview-aside .btn {
+
+                width: 100%;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- =========================================================
+
+         HEADER
+
+    ========================================================== -->
+
+    <header
+
+        class="header"
+
+        id="header"
+
+    >
+
+        <div class="container header-container">
+
+            <!-- LOGO -->
+
+            <a
+
+                href="./index.html"
+
+                class="brand"
+
+                aria-label="AGV Solution"
+
+            >
+
+                <img
+
+                    src="./assets/icons/android-chrome-192x192.png"
+
+                    alt=""
+
+                    class="brand-symbol-image"
+
+                >
+
+                <div class="brand-text">
+
+                    <strong>AGV</strong>
+
+                    <span>Solution</span>
+
+                </div>
+
+            </a>
+
+            <!-- NAVEGAÇÃO -->
+
+            <nav
+
+                class="desktop-nav"
+
+                aria-label="Navegação principal"
+
+            >
+
+                <a href="#sobre">
+
+                    Sobre
+
+                </a>
+
+                <a href="#proposito">
+
+                    Propósito
+
+                </a>
+
+                <a href="./solucoes.html">
+
+                    Threeo Fleet
+
+                </a>
+
+                <a href="#historia">
+
+                    Nossa história
+
+                </a>
+
+                <a href="#contato">
+
+                    Contato
+
+                </a>
+
+            </nav>
+
+            <!-- AÇÕES -->
+
+            <div class="header-actions">
+
+                <a
+
+                    href="./solucoes.html"
+
+                    class="btn btn-header"
+
+                >
+
+                    Conheça nossas soluções
+
+                </a>
+
+                <button
+
+                    class="menu-button"
+
+                    id="menuButton"
+
+                    type="button"
+
+                    aria-label="Abrir menu"
+
+                    aria-expanded="false"
+
+                >
+
+                    <span></span>
+
+                    <span></span>
+
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- MOBILE -->
+
+        <div
+
+            class="mobile-menu"
+
+            id="mobileMenu"
+
+            aria-hidden="true"
+
+        >
+
+            <a href="#sobre">
+
+                Sobre
+
+            </a>
+
+            <a href="#proposito">
+
+                Propósito
+
+            </a>
+
+            <a href="./solucoes.html">
+
+                Threeo Fleet
+
+            </a>
+
+            <a href="#historia">
+
+                Nossa história
+
+            </a>
+
+            <a href="#contato">
+
+                Contato
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- =====================================================
+
+             HERO
+
+        ====================================================== -->
+
+        <section
+
+            class="hero"
+
+            id="inicio"
+
+        >
+
+            <div class="hero-glow hero-glow-one"></div>
+
+            <div class="hero-glow hero-glow-two"></div>
+
+            <div class="container hero-container">
+
+                <!-- TEXTO -->
+
+                <div class="hero-content reveal">
+
+                    <div class="eyebrow">
+
+                        <span class="eyebrow-dot"></span>
+
+                        Tecnologia para gestão de frotas
+
+                    </div>
+
+                    <h1>
+
+                        Menos fragmentação.
+
+                        <span>
+
+                            Mais visão para decidir.
+
+                        </span>
+
+                    </h1>
+
+                    <p class="hero-description">
+
+                        Criamos tecnologia para transformar operações complexas
+
+                        em uma gestão mais integrada, automatizada e orientada
+
+                        por dados.
+
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a
+
+                            href="./solucoes.html"
+
+                            class="btn btn-primary"
+
+                        >
+
+                            Conheça o Threeo Fleet
+
+                            <span aria-hidden="true">
+
+                                →
+
+                            </span>
+
+                        </a>
+
+                        <a
+
+                            href="#sobre"
+
+                            class="btn btn-secondary"
+
+                        >
+
+                            Conheça a AGV
+
+                        </a>
+
+                    </div>
+
+                    <div class="hero-signature">
+
+                        <div class="signature-line"></div>
+
+                        <p>
+
+                            Tecnologia e transparência unidas ao talento
+
+                            que gerencia a sua frota.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- VISUAL -->
+
+                <div class="hero-visual reveal">
+
+                    <div class="visual-orbit orbit-one"></div>
+
+                    <div class="visual-orbit orbit-two"></div>
+
+                    <div class="hero-panel">
+
+                        <!-- CABEÇALHO -->
+
+                        <div class="hero-panel-header">
+
+                            <div>
+
+                                <span class="panel-overline">
+
+                                    AGV Solution
+
+                                </span>
+
+                                <strong>
+
+                                    Gestão conectada
+
+                                </strong>
+
+                            </div>
+
+                            <div class="panel-status">
+
+                                <span></span>
+
+                                Integrado
+
+                            </div>
+
+                        </div>
+
+                        <!-- SISTEMA -->
+
+                        <div class="central-system">
+
+                            <div class="system-core">
+
+                                <div class="core-icon">
+
+                                    <img
+
+                                        src="./assets/icons/android-chrome-192x192.png"
+
+                                        alt=""
+
+                                    >
+
+                                </div>
+
+                                <div>
+
+                                    <span>
+
+                                        Ecossistema
+
+                                    </span>
+
+                                    <strong>
+
+                                        Fleet OS
+
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+                            <!-- GRID -->
+
+                            <div class="system-grid">
+
+                                <div class="system-item">
+
+                                    <div class="system-number">
+
+                                        01
+
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+
+                                            Veículos
+
+                                        </strong>
+
+                                        <span>
+
+                                            Visão completa
+
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="system-item">
+
+                                    <div class="system-number">
+
+                                        02
+
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+
+                                            Condutores
+
+                                        </strong>
+
+                                        <span>
+
+                                            Gestão centralizada
+
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="system-item">
+
+                                    <div class="system-number">
+
+                                        03
+
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+
+                                            Infrações
+
+                                        </strong>
+
+                                        <span>
+
+                                            Ciclo de vida
+
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="system-item">
+
+                                    <div class="system-number">
+
+                                        04
+
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+
+                                            Operação
+
+                                        </strong>
+
+                                        <span>
+
+                                            Processos conectados
+
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- RODAPÉ DO PAINEL -->
+
+                        <div class="panel-bottom">
+
+                            <div>
+
+                                <span>
+
+                                    Automação
+
+                                </span>
+
+                                <strong>
+
+                                    Menos tarefas repetitivas
+
+                                </strong>
+
+                            </div>
+
+                            <div class="panel-arrow">
+
+                                ↗
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+
+             MANIFESTO
+
+        ====================================================== -->
+
+        <section class="manifesto section">
+
+            <div class="container">
+
+                <div class="manifesto-grid">
+
+                    <div class="section-intro reveal">
+
+                        <span class="section-label">
+
+                            Por que existimos
+
+                        </span>
+
+                        <h2>
+
+                            Um sistema não deveria criar
+
+                            <span>
+
+                                mais trabalho.
+
+                            </span>
+
+                        </h2>
+
+                    </div>
+
+                    <div class="manifesto-content reveal">
+
+                        <p class="large-text">
+
+                            Durante muito tempo, gerir uma frota significou
+
+                            lidar com informações espalhadas, diferentes
+
+                            plataformas, processos desconectados e inúmeras
+
+                            tarefas operacionais.
+
+                        </p>
+
+                        <p>
+
+                            A AGV Solution nasceu da percepção de que tecnologia
+
+                            poderia fazer mais do que simplesmente registrar
+
+                            informações.
+
+                        </p>
+
+                        <p>
+
+                            Ela poderia conectar processos, automatizar rotinas,
+
+                            organizar dados e mostrar ao gestor exatamente onde
+
+                            sua atenção é necessária.
+
+                        </p>
+
+                        <div class="manifesto-highlight">
+
+                            <span>
+
+                                Nosso princípio
+
+                            </span>
+
+                            <strong>
+
+                                Não queremos gerar mais tarefas.
+
+                                Queremos gerar visão.
+
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+
+             SOBRE
+
+        ====================================================== -->
+
+        <section
+
+            class="about section"
+
+            id="sobre"
+
+        >
+
+            <div class="container">
+
+                <div class="section-heading centered reveal">
+
+                    <span class="section-label">
+
+                        AGV Solution
+
+                    </span>
+
+                    <h2>
+
+                        Tecnologia construída a partir
+
+                        <span>
+
+                            da operação real.
+
+                        </span>
+
+                    </h2>
+
+                    <p>
+
+                        Antes de existir como empresa, a AGV nasceu de quem
+
+                        conheceu os desafios da gestão de frotas por dentro.
+
+                    </p>
+
+                </div>
+
+                <div class="about-cards">
+
+                    <!-- CARD 1 -->
+
+                    <article class="about-card reveal">
+
+                        <div class="card-index">
+
+                            01
+
+                        </div>
+
+                        <div class="card-icon">
+
+                            ◇
+
+                        </div>
+
+                        <h3>
+
+                            Experiência operacional
+
+                        </h3>
+
+                        <p>
+
+                            Nossa visão nasceu da experiência prática de quem
+
+                            já esteve do outro lado da ferramenta, operando
+
+                            processos e convivendo diariamente com as
+
+                            limitações de sistemas fragmentados.
+
+                        </p>
+
+                    </article>
+
+                    <!-- CARD 2 -->
+
+                    <article class="about-card featured reveal">
+
+                        <div class="card-index">
+
+                            02
+
+                        </div>
+
+                        <div class="card-icon">
+
+                            ⬡
+
+                        </div>
+
+                        <h3>
+
+                            Desenvolvimento com propósito
+
+                        </h3>
+
+                        <p>
+
+                            A tecnologia foi construída de forma independente,
+
+                            transformando necessidades reais da operação em
+
+                            funcionalidades, integrações e automações.
+
+                        </p>
+
+                    </article>
+
+                    <!-- CARD 3 -->
+
+                    <article class="about-card reveal">
+
+                        <div class="card-index">
+
+                            03
+
+                        </div>
+
+                        <div class="card-icon">
+
+                            ◎
+
+                        </div>
+
+                        <h3>
+
+                            Visão de quem gerencia
+
+                        </h3>
+
+                        <p>
+
+                            A evolução do produto também incorpora a visão de
+
+                            profissionais responsáveis por frotas reais,
+
+                            aproximando desenvolvimento e realidade operacional.
+
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+
+             PROPÓSITO / MISSÃO / VISÃO
+
+        ====================================================== -->
+
+        <section
+
+            class="purpose section"
+
+            id="proposito"
+
+        >
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-label">
+
+                        Direção
+
+                    </span>
+
+                    <h2>
+
+                        O que orienta
+
+                        <span>
+
+                            cada decisão.
+
+                        </span>
+
+                    </h2>
+
+                </div>
+
+                <div class="purpose-grid">
+
+                    <!-- PROPÓSITO -->
+
+                    <article class="purpose-card reveal">
+
+                        <div class="purpose-header">
+
+                            <span class="purpose-number">
+
+                                01
+
+                            </span>
+
+                            <span class="purpose-type">
+
+                                Propósito
+
+                            </span>
+
+                        </div>
+
+                        <h3>
+
+                            Transformar complexidade em clareza.
+
+                        </h3>
+
+                        <p>
+
+                            Existimos para simplificar a gestão de frotas e
+
+                            permitir que gestores tenham mais controle,
+
+                            informação e confiança para tomar decisões.
+
+                        </p>
+
+                    </article>
+
+                    <!-- MISSÃO -->
+
+                    <article class="purpose-card reveal">
+
+                        <div class="purpose-header">
+
+                            <span class="purpose-number">
+
+                                02
+
+                            </span>
+
+                            <span class="purpose-type">
+
+                                Missão
+
+                            </span>
+
+                        </div>
+
+                        <h3>
+
+                            Conectar tecnologia, processos e informação.
+
+                        </h3>
+
+                        <p>
+
+                            Desenvolver soluções que centralizem operações,
+
+                            automatizem tarefas e transformem dados da frota
+
+                            em informações úteis para quem precisa agir.
+
+                        </p>
+
+                    </article>
+
+                    <!-- VISÃO -->
+
+                    <article class="purpose-card purpose-card-dark reveal">
+
+                        <div class="purpose-header">
+
+                            <span class="purpose-number">
+
+                                03
+
+                            </span>
+
+                            <span class="purpose-type">
+
+                                Visão
+
+                            </span>
+
+                        </div>
+
+                        <h3>
+
+                            Construir um novo padrão de Fleet OS.
+
+                        </h3>
+
+                        <p>
+
+                            Consolidar um ecossistema completo para gestão de
+
+                            frotas, capaz de conectar toda a operação em uma
+
+                            experiência única, inteligente e escalável.
+
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+
+             VALORES
+
+        ====================================================== -->
+
+        <section class="values section">
+
+            <div class="container">
+
+                <div class="values-layout">
+
+                    <!-- INTRO -->
+
+                    <div class="values-intro reveal">
+
+                        <span class="section-label">
+
+                            Nossos valores
+
+                        </span>
+
+                        <h2>
+
+                            Tecnologia precisa
+
+                            <span>
+
+                                resolver.
+
+                            </span>
+
+                        </h2>
+
+                        <p>
+
+                            Nossos princípios orientam tanto o desenvolvimento
+
+                            das soluções quanto a forma como enxergamos a
+
+                            relação entre tecnologia, operação e pessoas.
+
+                        </p>
+
+                    </div>
+
+                    <!-- LISTA -->
+
+                    <div class="values-list">
+
+                        <article class="value-item reveal">
+
+                            <span class="value-number">
+
+                                01
+
+                            </span>
+
+                            <div>
+
+                                <h3>
+
+                                    Transparência
+
+                                </h3>
+
+                                <p>
+
+                                    Informação clara para que decisões sejam
+
+                                    tomadas com contexto e segurança.
+
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                        <article class="value-item reveal">
+
+                            <span class="value-number">
+
+                                02
+
+                            </span>
+
+                            <div>
+
+                                <h3>
+
+                                    Simplicidade
+
+                                </h3>
+
+                                <p>
+
+                                    Complexidade deve ser resolvida pela
+
+                                    tecnologia, não transferida para o usuário.
+
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                        <article class="value-item reveal">
+
+                            <span class="value-number">
+
+                                03
+
+                            </span>
+
+                            <div>
+
+                                <h3>
+
+                                    Integração
+
+                                </h3>
+
+                                <p>
+
+                                    Processos funcionam melhor quando deixam de
+
+                                    existir de forma isolada.
+
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                        <article class="value-item reveal">
+
+                            <span class="value-number">
+
+                                04
+
+                            </span>
+
+                            <div>
+
+                                <h3>
+
+                                    Automação
+
+                                </h3>
+
+                                <p>
+
+                                    Tudo aquilo que pode deixar de ser uma tarefa
+
+                                    manual deve ser repensado.
+
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                        <article class="value-item reveal">
+
+                            <span class="value-number">
+
+                                05
+
+                            </span>
+
+                            <div>
+
+                                <h3>
+
+                                    Evolução
+
+                                </h3>
+
+                                <p>
+
+                                    Produtos relevantes nunca estão prontos:
+
+                                    evoluem junto com as necessidades de quem
+
+                                    os utiliza.
+
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+
+             THREEO FLEET
+
+        ====================================================== -->
+
+        <section
+
+            class="threeo section"
+
+            id="threeo"
+
+        >
+
+            <div class="threeo-glow"></div>
+
+            <div class="container">
+
+                <div class="threeo-heading reveal">
+
+                    <div>
+
+                        <span class="product-tag">
+
+                            Produto AGV Solution
+
+                        </span>
+
+                        <h2>
+
+                            Threeo
+
+                            <span>
+
+                                Fleet
+
+                            </span>
+
+                        </h2>
+
+                    </div>
+
+                    <p>
+
+                        A visão da AGV aplicada à gestão de frotas:
+
+                        um ecossistema pensado para conectar dados,
+
+                        pessoas, processos e decisões.
+
+                    </p>
+
+                </div>
+
+                <div class="fleet-layout">
+
+                    <!-- CARD PRINCIPAL -->
+
+                    <div class="fleet-main-card reveal">
+
+                        <div class="fleet-card-top">
+
+                            <div>
+
+                                <span>
+
+                                    Fleet Operating System
+
+                                </span>
+
+                                <strong>
+
+                                    Tudo conectado.
+
+                                    Uma única visão.
+
+                                </strong>
+
+                            </div>
+
+                            <div class="fleet-logo-mini">
+
+                                <img
+
+                                    src="./assets/images/logo/icon-192.png"
+
+                                    alt="Threeo Fleet"
+
+                                    class="threeo-logo-image"
+
+                                >
+
+                            </div>
+
+                        </div>
+
+                        <!-- MOCKUP -->
+
+                        <div class="fleet-screen">
+
+                            <div class="screen-sidebar">
+
+                                <div class="screen-logo">
+
+                                    <img
+
+                                        src="./assets/images/logo/icon-192.png"
+
+                                        alt=""
+
+                                        class="threeo-screen-logo-image"
+
+                                    >
+
+                                </div>
+
+                                <span class="screen-menu active"></span>
+
+                                <span class="screen-menu"></span>
+
+                                <span class="screen-menu"></span>
+
+                                <span class="screen-menu"></span>
+
+                                <span class="screen-menu"></span>
+
+                            </div>
+
+                            <div class="screen-content">
+
+                                <div class="screen-top">
+
+                                    <div>
+
+                                        <span></span>
+
+                                        <span></span>
+
+                                    </div>
+
+                                    <span></span>
+
+                                </div>
+
+                                <!-- KPIs -->
+
+                                <div class="screen-kpis">
+
+                                    <div class="fake-kpi">
+
+                                        <span></span>
+
+                                        <strong></strong>
+
+                                        <small></small>
+
+                                    </div>
+
+                                    <div class="fake-kpi">
+
+                                        <span></span>
+
+                                        <strong></strong>
+
+                                        <small></small>
+
+                                    </div>
+
+                                    <div class="fake-kpi">
+
+                                        <span></span>
+
+                                        <strong></strong>
+
+                                        <small></small>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- DASHBOARD -->
+
+                                <div class="screen-dashboard">
+
+                                    <div class="fake-chart">
+
+                                        <div class="chart-bars">
+
+                                            <span style="height: 32%"></span>
+
+                                            <span style="height: 48%"></span>
+
+                                            <span style="height: 41%"></span>
+
+                                            <span style="height: 67%"></span>
+
+                                            <span style="height: 58%"></span>
+
+                                            <span style="height: 80%"></span>
+
+                                            <span style="height: 71%"></span>
+
+                                            <span style="height: 92%"></span>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="fake-list">
+
+                                        <span></span>
+
+                                        <span></span>
+
+                                        <span></span>
+
+                                        <span></span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- FEATURES -->
+
+                    <div class="fleet-features">
+
+                        <article class="fleet-feature reveal">
+
+                            <span>
+
+                                01
+
+                            </span>
+
+                            <h3>
+
+                                Operação centralizada
+
+                            </h3>
+
+                            <p>
+
+                                Veículos, condutores, infrações, documentos,
+
+                                manutenção, reservas e processos dentro do
+
+                                mesmo ecossistema.
+
+                            </p>
+
+                        </article>
+
+                        <article class="fleet-feature reveal">
+
+                            <span>
+
+                                02
+
+                            </span>
+
+                            <h3>
+
+                                Automação inteligente
+
+                            </h3>
+
+                            <p>
+
+                                Menos tarefas repetitivas e mais processos
+
+                                acontecendo com intervenção apenas quando
+
+                                realmente necessária.
+
+                            </p>
+
+                        </article>
+
+                        <article class="fleet-feature reveal">
+
+                            <span>
+
+                                03
+
+                            </span>
+
+                            <h3>
+
+                                Visão gerencial
+
+                            </h3>
+
+                            <p>
+
+                                Indicadores e análises desenvolvidos para
+
+                                transformar acontecimentos da operação em
+
+                                informação para tomada de decisão.
+
+                            </p>
+
+                        </article>
+
+                        <article class="fleet-feature reveal">
+
+                            <span>
+
+                                04
+
+                            </span>
+
+                            <h3>
+
+                                Processos conectados
+
+                            </h3>
+
+                            <p>
+
+                                O dado deixa de existir isoladamente e passa a
+
+                                fazer parte de um contexto completo da frota.
+
+                            </p>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+
+             FILOSOFIA
+
+        ====================================================== -->
+
+        <section class="philosophy section">
+
+            <div class="container">
+
+                <div class="philosophy-box reveal">
+
+                    <div class="philosophy-label">
+
+                        Nossa forma de pensar
+
+                    </div>
+
+                    <blockquote>
+
+                        “O gestor não deveria precisar procurar o problema.
+
+                        <span>
+
+                            A tecnologia deveria mostrar onde ele está.
+
+                        </span>”
+
+                    </blockquote>
+
+                    <p>
+
+                        É por isso que desenvolvemos soluções orientadas por
+
+                        contexto, automação e análise — para que o gestor
+
+                        invista seu tempo em decisões, não em tarefas
+
+                        repetitivas.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+
+             HISTÓRIA
+
+        ====================================================== -->
+
+        <section
+
+            class="history section"
+
+            id="historia"
+
+        >
+
+            <div class="container">
+
+                <div class="history-layout">
+
+                    <div class="history-heading reveal">
+
+                        <span class="section-label">
+
+                            Nossa história
+
+                        </span>
+
+                        <h2>
+
+                            Uma ideia que
+
+                            <span>
+
+                                cresceu com o problema.
+
+                            </span>
+
+                        </h2>
+
+                        <p>
+
+                            O que começou como uma solução objetiva para um
+
+                            problema específico evoluiu à medida que novas
+
+                            conexões entre os processos da frota ficaram
+
+                            evidentes.
+
+                        </p>
+
+                    </div>
+
+                    <div class="timeline">
+
+                        <!-- 2024 -->
+
+                        <article class="timeline-item reveal">
+
+                            <div class="timeline-marker">
+
+                                <span></span>
+
+                            </div>
+
+                            <div class="timeline-date">
+
+                                Setembro de 2024
+
+                            </div>
+
+                            <div class="timeline-content">
+
+                                <h3>
+
+                                    A ideia
+
+                                </h3>
+
+                                <p>
+
+                                    Surge a proposta de desenvolver uma solução
+
+                                    mais organizada e assertiva para gestão de
+
+                                    notificações, multas e solicitações de
+
+                                    recursos.
+
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                        <!-- 2024 / 2025 -->
+
+                        <article class="timeline-item reveal">
+
+                            <div class="timeline-marker">
+
+                                <span></span>
+
+                            </div>
+
+                            <div class="timeline-date">
+
+                                2024 — 2025
+
+                            </div>
+
+                            <div class="timeline-content">
+
+                                <h3>
+
+                                    A visão se expande
+
+                                </h3>
+
+                                <p>
+
+                                    A experiência operacional evidencia que o
+
+                                    problema não estava apenas em uma etapa da
+
+                                    gestão, mas na fragmentação de todo o
+
+                                    ecossistema.
+
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                        <!-- 2025 -->
+
+                        <article class="timeline-item reveal">
+
+                            <div class="timeline-marker">
+
+                                <span></span>
+
+                            </div>
+
+                            <div class="timeline-date">
+
+                                Dezembro de 2025
+
+                            </div>
+
+                            <div class="timeline-content">
+
+                                <h3>
+
+                                    Nasce oficialmente a AGV Solution
+
+                                </h3>
+
+                                <p>
+
+                                    O projeto deixa de ser apenas uma iniciativa
+
+                                    experimental e passa a existir oficialmente
+
+                                    como empresa de tecnologia.
+
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                        <!-- 2026 -->
+
+                        <article class="timeline-item reveal">
+
+                            <div class="timeline-marker">
+
+                                <span></span>
+
+                            </div>
+
+                            <div class="timeline-date">
+
+                                2026
+
+                            </div>
+
+                            <div class="timeline-content">
+
+                                <h3>
+
+                                    Um ecossistema de gestão
+
+                                </h3>
+
+                                <p>
+
+                                    A plataforma evolui para conectar veículos,
+
+                                    condutores, infrações, documentos,
+
+                                    manutenção, reservas, automações,
+
+                                    indicadores e outros processos da frota.
+
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                        <!-- FUTURO -->
+
+                        <article class="timeline-item reveal">
+
+                            <div class="timeline-marker current">
+
+                                <span></span>
+
+                            </div>
+
+                            <div class="timeline-date">
+
+                                Próximo capítulo
+
+                            </div>
+
+                            <div class="timeline-content">
+
+                                <h3>
+
+                                    A consolidação de um Fleet OS
+
+                                </h3>
+
+                                <p>
+
+                                    Seguimos construindo um ecossistema capaz
+
+                                    de tornar a gestão cada vez mais conectada,
+
+                                    inteligente e orientada por dados.
+
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+
+             CONTATO / CTA
+
+        ====================================================== -->
+
+        <section
+
+            class="cta section"
+
+            id="contato"
+
+        >
+
+            <div class="container">
+
+                <div class="cta-box reveal">
+
+                    <div class="cta-content">
+
+                        <span class="section-label">
+
+                            AGV Solution
+
+                        </span>
+
+                        <h2>
+
+                            A tecnologia cuida da complexidade.
+
+                            <span>
+
+                                Você enxerga o que importa.
+
+                            </span>
+
+                        </h2>
+
+                        <p>
+
+                            Conheça nossas soluções e descubra uma nova forma
+
+                            de conectar operação, informação e decisão.
+
+                        </p>
+
+                    </div>
+
+                    <div class="cta-actions">
+
+                        <a
+
+                            href="./contato.html"
+
+                            class="btn btn-primary"
+
+                        >
+
+                            Fale com a AGV
+
+                            <span>
+
+                                →
+
+                            </span>
+
+                        </a>
+
+                        <a
+
+                            href="./solucoes.html"
+
+                            class="btn btn-secondary-light"
+
+                        >
+
+                            Conheça o Threeo Fleet
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =========================================================
+
+         FOOTER
+
+    ========================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-top">
+
+                <!-- MARCA -->
+
+                <div class="footer-brand">
+
+                    <a
+
+                        href="./index.html"
+
+                        class="brand footer-logo"
+
+                        aria-label="AGV Solution"
+
+                    >
+
+                        <img
+
+                            src="./assets/icons/android-chrome-192x192.png"
+
+                            alt=""
+
+                            class="brand-symbol-image"
+
+                        >
+
+                        <div class="brand-text">
+
+                            <strong>
+
+                                AGV
+
+                            </strong>
+
+                            <span>
+
+                                Solution
+
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                    <p>
+
+                        Tecnologia para uma gestão de frotas mais integrada,
+
+                        transparente e inteligente.
+
+                    </p>
+
+                </div>
+
+                <!-- NAVEGAÇÃO -->
+
+                <div class="footer-navigation">
+
+                    <div class="footer-column">
+
+                        <strong>
+
+                            AGV Solution
+
+                        </strong>
+
+                        <a href="./sobre.html">
+
+                            Sobre
+
+                        </a>
+
+                        <a href="#proposito">
+
+                            Propósito
+
+                        </a>
+
+                        <a href="#historia">
+
+                            Nossa história
+
+                        </a>
+
+                    </div>
+
+                    <div class="footer-column">
+
+                        <strong>
+
+                            Soluções
+
+                        </strong>
+
+                        <a href="./solucoes.html">
+
+                            Threeo Fleet
+
+                        </a>
+
+                        <a href="./solucoes.html">
+
+                            Fleet OS
+
+                        </a>
+
+                        <a href="./solucoes.html">
+
+                            Automação
+
+                        </a>
+
+                    </div>
+
+                    <div class="footer-column">
+
+                        <strong>
+
+                            Legal e contato
+
+                        </strong>
+
+                        <a href="./privacidade.html">
+
+                            Política de Privacidade
+
+                        </a>
+
+                        <a href="./termos.html">
+
+                            Termos de Uso
+
+                        </a>
+
+                        <a href="./contato.html">
+
+                            Fale conosco
+
+                        </a>
+
+                        <a href="mailto:contato@agvsolution.com.br">
+
+                            contato@agvsolution.com.br
+
+                        </a>
+
+                        <span>
+
+                            Caxias do Sul · RS
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RODAPÉ INFERIOR -->
+
+            <div class="footer-bottom">
+
+                <p>
+
+                    ©
+
+                    <span id="currentYear"></span>
+
+                    AGV Solution LTDA.
+
+                    Todos os direitos reservados.
+
+                </p>
+
+                <div class="footer-legal">
+
+                    <a href="./privacidade.html">
+
+                        Política de Privacidade
+
+                    </a>
+
+                    <a href="./termos.html">
+
+                        Termos de Uso
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- =========================================================
+
+         JAVASCRIPT
+
+    ========================================================== -->
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
